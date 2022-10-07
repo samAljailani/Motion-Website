@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&forUsername=GoogleDevelopers&key=AIzaSyB-vx18no16h9vjjB8zxdmufRdj7W07Ylc"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Get YouTube Video by Keyword</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <style>
+            .activeLink{
+      background-color: #d8d5d5 !important;
+    }
+    
+    *{
+            font-size: 20px;
+    }
+    .videoElement{
+        border: 2px solid grey;
+        border-radius:10px;
+    }
+        </style>
+    </head>
+    <body>
+        <div id="HandTrackingCanvas" class="p-1" style="position:fixed; left:80%; z-index:1;">
+            <video class="input_video" style="display:none;"></video>
+            <canvas class="output_canvas" style="width:300px; height:auto;"></canvas>
+          </div>
+        <div id="app">
+            <nav-bar :pages="links"></nav-bar>
+            <div id="main">
+                <tutorials></tutorials>
+            </div>
+        </div>
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <script src="javascript/components/app.js"></script>
+        <script src="javascript/components/components.js"></script>
+        <script>app.mount("#app")</script>
+        <script src="javascript/DOM.js" type="module"></script>
+
+    </body>
+</html>
