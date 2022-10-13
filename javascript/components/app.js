@@ -3,7 +3,7 @@ const app = Vue.createApp({
         return{
             links: [
                 {page:"Home", link:"./index.html"},
-                {page:"Tutorials", link:"./tutorials.html"},
+                {page:"Tutorials", link:"./Tutorials.html"},
                 {page:"Shop", link:"#"},
                 {page:"Game", link:"#"}
             ],
