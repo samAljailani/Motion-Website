@@ -10,8 +10,8 @@ const app = Vue.createApp({
             instructions:[
                 {instruction: 'To navigate to the right. extend the index finger to the right' , image:'Images/right.jpg'},
                 {instruction: 'To navigate to the left. extend the index finger to the left' , image:'Images/left.webp'},
-                {instruction: 'To navigate to the up. extend the index finger to the up' , image:'Images/up.jpg'},
-                {instruction: 'To navigate to the down. extend the index finger to the down' , image:'Images/down.jpg'},
+                {instruction: 'To navigate from the page content back to the navigation bar. extend the index finger up' , image:'Images/up.jpg'},
+                {instruction: 'To navigate from the navigation bar to the page content. extend the index finger down' , image:'Images/down.jpg'},
                 {instruction: 'To click an element entend all five fingers' , image:'Images/allfingers.jpg'}
             ]
         }
